@@ -1,8 +1,26 @@
 aid: carebridge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carebridge.png
 name: CareBridge *
-description: 'CareBridge * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'CareBridge is a home and community-based healthcare company that delivers 24/7 virtual
+  and in-home care coordination to high-risk, largely Medicaid populations on behalf of health plans.
+  Its interdisciplinary care teams address members'' physical, behavioral, and social health needs, and
+  the company operates three core service lines: 24/7 member support, decision support (durable medical
+  equipment and technology provisioning), and Electronic Visit Verification (EVV) technology used by
+  state Medicaid programs and managed-care organizations. Headquartered in Nashville, Tennessee, CareBridge
+  was surfaced as a portfolio company of GV. As of this enrichment pass the company publishes no public
+  developer portal, API documentation, OpenAPI/AsyncAPI specification, SDKs, or /.well-known discovery
+  surface; this profile therefore captures its public identity and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/carebridge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Life Sciences
+- Healthcare
+- Home Health
+- Care Coordination
+- Electronic Visit Verification
+- Medicaid
+- Managed Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carebridge-domain-security.yml
 - type: Website
-  url: http://carebridgehealth.com
+  url: https://www.carebridgehealth.com
+- type: PrivacyPolicy
+  url: https://www.carebridgehealth.com/privacy-policy
+- type: Support
+  url: https://www.carebridgehealth.com/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
